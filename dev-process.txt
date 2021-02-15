@@ -1,0 +1,13 @@
+Hello!
+Here's the development process:
+1- I spent some time looking at the wireframe trying to figure out ways to improve it.
+2- I found room for improvement like font, information layout, adding somme buttons (phone), horizontal swipe of gallery, responsive design etc.I only implemented responsiveness.
+3- I weighed in options to write CSS and settled on pure CSS. Since it's a one-page project.
+4- I used CSS grid and flexbox. In production, one should use autoprefixer with a build tool.
+5- At the start, I was planning to use Vanilla Js, but since I'm learning Vue Js, I want to give it a try.
+
+Aside from vue.js CLI (that which comes with laravel --I didn't use) nothing was difficult. At least not that I didn't figure out how to do.
+
+1- I used Vue cdn.
+2- I used git
+Nothing fancy, this project is too small
