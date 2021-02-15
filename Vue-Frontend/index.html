@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/app.js" defer></script>
+
+
+    <title>modzee</title>
+</head>
+
+<body>
+    <div class="main-container" id="main-container">
+        <article class="photographer">
+            <picture class="photographer__picture">
+                <img :src=profile_picture :alt="name">
+            </picture>
+            <section class="photographer__personal-infos">
+                <h1 class="photographer__name">{{ name }}</h1>
+                <h4 class="photographer__title">Bio</h4>
+                <p class="photographer__biography">{{ bio}}</p>
+            </section>
+            <section class="photographer__contact">
+                <span class="photographer__contact-value">
+                    <b class="photographer__contact-title">Phone</b>
+                    {{ phone }}
+                </span>
+                <span class="photographer__contact-value">
+                    <b class="photographer__contact-title">Email</b>
+                    {{ email }}
+                </span>
+        </article>
+
+        <section class="gallery-container gallery-container--empty" v-if="gallerys.length == 0">
+            no gallery, yet :) stay tunned
+        </section>
+        <article class="gallery-container" v-else>
+            <section class="gallery" v-for="gallery in gallerys" :key="gallery.id">
+                <picture class="gallery__picture"><img :src="gallery.img" :alt="gallery.title"></picture>
+                <header class="gallery__title">{{ gallery.title }}</header>
+                <p class="gallery__discription">{{ gallery.description }}</p>
+                <footer class="gallery__interaction">
+                    <label for="" class="" :class="{'gallery__featured': gallery.featured}"></label>
+                    <span class="gallery__date">{{ gallery.created_on }}</span>
+                </footer>
+            </section>
+        </article>
+    </div>
+
+    </article>
+</body>
+
+</html>
