@@ -45,7 +45,7 @@ picture img{
     margin: 0 auto;
    display: flex;
     flex-flow: column;
-    gap: 1em;
+    gap: 2rem;
     width: 70rem;
     max-width: 100%;
     padding: 1em;
@@ -126,7 +126,7 @@ picture img{
     display: grid;
     grid-template-columns: repeat( auto-fill, minmax(15rem, 1fr));
    justify-content: space-around;
-    gap: 1em;
+    gap: 2em;
 }
 .gallery-container--empty{
     display: flex;
@@ -145,7 +145,7 @@ picture img{
     background-color: white;
     max-width: 20rem;
     min-width: 15rem;
-    place-self: center;
+    place-self: stretch center;
     width: 100%;
 }
 
