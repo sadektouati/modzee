@@ -6,7 +6,7 @@
             "phone": '.. .. .. ..',
             "bio": ".. .. ... ... ... ....",
             "profile_picture": "images/profile.jpeg",
-            "gallerys": [
+            "galleries": [
                   {
                   "id": 48,
                   "photographer_id": 12,
@@ -66,7 +66,7 @@
                  this.phone = artisData.phone
                  this.bio = artisData.bio
                  this.profile_picture = artisData.profile_picture
-                 this.gallerys = artisData.gallerys;
+                 this.galleries = artisData.galleries;
                   }).catch((err)=>{
                      alert("please make sure you have the api running");
                   })

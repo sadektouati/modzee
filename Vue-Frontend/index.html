@@ -35,11 +35,11 @@
                 </span>
         </article>
 
-        <section class="gallery-container gallery-container--empty" v-if="gallerys.length == 0">
-            no gallery, yet :) stay tunned
+        <section class="gallery-container gallery-container--empty" v-if="galleries.length == 0">
+            no gallery, yet :) stay tuned
         </section>
         <article class="gallery-container" v-else>
-            <section class="gallery" v-for="gallery in gallerys" :key="gallery.id">
+            <section class="gallery" v-for="gallery in galleries" :key="gallery.id">
                 <picture class="gallery__picture"><img :src="gallery.img" :alt="gallery.title"></picture>
                 <header class="gallery__title">{{ gallery.title }}</header>
                 <p class="gallery__discription">{{ gallery.description }}</p>
