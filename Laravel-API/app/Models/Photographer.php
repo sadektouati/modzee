@@ -10,7 +10,7 @@ class Photographer extends Model
     protected $table = 'photographer';
     use HasFactory;
 
-    public function gallerys()
+    public function galleries()
     {
         return $this->hasMany(Gallery::class);
     }

@@ -13,7 +13,7 @@ class PhotographerController extends Controller
     public function index(Request $request)
     {
         $photographerId =  $request->photographer_id ?? rand(1, 20);
-        $photographer = Photographer::find(2)->with('gallerys')->where('id', $photographerId)->get(); //->toArray();
+        $photographer = Photographer::find(2)->with('galleries')->where('id', $photographerId)->get(); //->toArray();
         return $photographer;
     }
 }

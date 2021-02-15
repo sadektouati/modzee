@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Database\Seeders\PhotographerSeeder;
 use App\Models\Photographer;
 
-use Database\Seeders\GallerySeeder;
+use Database\Seeders\gallerieseeder;
 use App\Models\Gallery;
 
 use function GuzzleHttp\Promise\each;
@@ -23,8 +23,8 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         \App\Models\Photographer::factory(100)->create()->each(function ($photographer) {
-            $gallerys = \App\Models\Gallery::factory(rand(0, 10))->make();
-            $photographer->gallerys()->saveMany($gallerys);
+            $galleries = \App\Models\Gallery::factory(rand(0, 10))->make();
+            $photographer->galleries()->saveMany($galleries);
         });
     }
 }
