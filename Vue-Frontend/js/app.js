@@ -67,7 +67,8 @@
                  this.bio = artisData.bio
                  this.profile_picture = artisData.profile_picture
                  this.gallerys = artisData.gallerys;
+                  }).catch((err)=>{
+                     alert("please make sure you have the api running");
                   })
-            this.name = 'suidaaaaak'
          }
       })
